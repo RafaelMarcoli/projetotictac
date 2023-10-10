@@ -7,3 +7,4 @@ function toggleMode() {
     document.getElementById("darkmode")
     .addEventListener('click', toggleMode)
   }
+  
