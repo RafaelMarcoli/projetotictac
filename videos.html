@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="Logotictac">
+
+    <a href="./">
+
+    <img src="./assets/Logo/LogoTictac.jpeg" alt="LogoTictac">
+    </a>
+    <div id="switch" onclick="toggleMode()">
+      <button>
+      </button>
+      <span></span>
+    </div>
+    <div id="espaco"><P></P></div>
+  </header>
+
+  <main>
+    <section id="filtros" class="p-10 flex gap-4">
+      <div>
+         <input id="exibir-todos" 
+         type="radio" 
+         name="filtro" 
+         class="peer hidden" checked >
+         <label for="exibir-todos" >Todos</label>
+      </div>
+      <div>
+        <input id="exibir-masculinos" 
+        type="radio" 
+        name="filtro" 
+        class="peer hidden">
+        <label for="exibir-masculinos" >Masculinos</label>
+      </div>
+      <div>
+        <input id="exibir-femininos" 
+        type="radio" 
+        name="filtro" 
+        class="peer hidden">
+        <label for="exibir-femininos">Femininos</label>
+      </div>
+      
+    </section>
+    <section id="container-videos">
+    
+    </section>
+  </main>
+  <script type="module" src="./videos.js"></script>
+  <script src="./src/light.js"></script>
+</body>
+</html>

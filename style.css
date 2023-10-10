@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  }
+
+  main {
+    background-color: rgb(13, 10, 36);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+
+  :root {
+    --text-color: white;
+    --bg-url: url(./assets/Logo/bg-desktop.jpg);
+    --color-shadow: 0 8px 15px -3px rgb(119, 119, 146);
+    --color-sha: 0 8px 6px -3px mediumblue;
+    --color-name: 1px solid yellow;
+    --shadow-name:0 2px 2px rgb(224, 222, 104);
+    --color-preco: greenyellow;
+    --switch-bg-url: url(./assets/Logo/moon-stars.svg);
+  }
+
+  .light {
+    --text-color: black;
+    --bg-url: url(./assets/Logo/bg-desktop-light.jpg);
+    --color-shadow: 0 8px 15px -3px rgb(242, 3, 3);
+    --color-sha: 0 8px 6px -3px rgb(242, 3, 3);
+    --color-name: 1px solid rgb(8, 123, 245);
+    --shadow-name:0 2px 2px rgb(8, 115, 237);
+    --color-preco: rgb(6, 120, 2);
+    --switch-bg-url: url(./assets/Logo/sun.svg);
+  }
+
+  #filtros {
+    height: 30px;
+    display: flex;
+    padding: 10px;
+    gap: 0px 10px;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  #filtros :hover {
+    border: 2px solid rgb(77, 71, 160);
+    background: rgb(15, 15, 43);
+    border-radius: 10px;
+  }
+
+  label {
+    border: 2px solid white;
+    padding: 5px;
+    background-color: rgb(35, 31, 104);
+    color: white;
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+  }
+  
+
+  #container-produto {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  #container-produto {
+    background: var(--bg-url) no-repeat top center/cover;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 65px;
+  }
+  #container-videos {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  #container-videos {
+    background: var(--bg-url) no-repeat top center/cover;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 65px;
+  }
+
+ /* header com logo switch e botao de videos */
+  .Logotictac {
+    display: flex;
+    background-color: rgb(30, 27, 75);
+    justify-content: space-between;
+  }
+  .Logotictac img {
+    height: 4rem;
+    border-radius: 20px;
+    padding: 7px 10px;
+  }
+
+  #switch {
+    position: relative;
+    width: 64px;
+  }
+
+  #switch button {
+    width: 29px;
+    height: 29px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+  .light #switch button{
+    right: 0;
+    left: initial;
+  }
+
+  #switch span {
+    display: block;
+    width: 62px;
+    height: 22px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+    margin-top: 21px;
+  }
+  #espaco {
+    margin-right: 95px;
+  }
+
+  #videos {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+  }
+  #videos button {
+    width: 60px;
+    height: 30px;
+    background-color: rgb(30, 27, 75);
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    cursor: pointer;
+    user-select: none;
+  }
+  #videos :hover {
+    border: 2px solid rgb(77, 71, 160);
+    background-color: rgb(15, 15, 43);
+  }
+
+ /* cards do container */
+
+  .imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 140px;
+    width: 250px;
+    border-radius: 15px;
+    
+    margin: 1px;
+    box-shadow: var(--color-sha);
+  }
+  .imagem:hover {
+    scale: 1.34;
+    transition: 0.5s;
+    box-shadow: var(--color-shadow);
+  }
+
+  .loja {
+    color: var(--text-color);
+    padding: 5px 7px;
+    border: var(--color-name);
+    border-radius: 5px;
+    margin: 2px;
+    text-align: center;
+    box-shadow: var(--shadow-name);
+    line-height: 20px;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .nomes {
+    color: var(--text-color);
+    padding: 5px 7px;
+    border: 1px solid rgb(255, 153, 0);
+    border-radius: 5px;
+    margin: 6px 2px 1px;
+    font-weight: 500;
+    line-height: 20px;
+    box-shadow: 0 3px 3px rgb(221, 137, 10);
+    
+  }
+
+  .preco {
+    font-weight: 500;
+    color: var(--color-preco);
+    padding: 1px 12px;
+  }
+
+  .video {
+    width: 297px;
+    height: 110px;
+  }
+ 
+  
