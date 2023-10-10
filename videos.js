@@ -1,9 +1,10 @@
 import { renderizarVideo } from "./src/cartaoVideo";
 import { inicializarVideos } from "./src/filtroVideo";
-import { toggleMode } from "./src/light";
+import { iniciarDarkMode } from "./src/light";
+
 
 
 
 renderizarVideo();
 inicializarVideos();
-toggleMode();
+iniciarDarkMode();
