@@ -1,9 +1,6 @@
-import { renderizarVideo } from "./src/cartaoVideo";
-import { inicializarVideos } from "./src/filtroVideo";
-import { iniciarDarkMode } from "./src/light";
-
-
-
+import { renderizarVideo } from "./src/cartaoVideo.js";
+import { inicializarVideos } from "./src/filtroVideo.js";
+import { iniciarDarkMode } from "./src/light.js";
 
 renderizarVideo();
 inicializarVideos();
