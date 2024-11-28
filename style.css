@@ -18,24 +18,24 @@ main {
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/Logo/bg-desktop.jpg);
+  --bg-url: url(/assets/Logo/bg-desktop.jpg);
   --color-shadow: 0 8px 15px -3px rgb(119, 119, 146);
   --color-sha: 0 8px 6px -3px mediumblue;
   --color-name: 1px solid yellow;
   --shadow-name: 0 2px 2px rgb(224, 222, 104);
   --color-preco: greenyellow;
-  --switch-bg-url: url(./assets/Logo/moon-stars.svg);
+  --switch-bg-url: url(/assets/Logo/moon-stars.svg);
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/Logo/bg-desktop-light.jpg);
+  --bg-url: url(/assets/Logo/bg-desktop-light.jpg);
   --color-shadow: 0 8px 15px -3px rgb(242, 3, 3);
   --color-sha: 0 8px 6px -3px rgb(242, 3, 3);
   --color-name: 1px solid rgb(8, 123, 245);
   --shadow-name: 0 2px 2px rgb(8, 115, 237);
   --color-preco: rgb(6, 120, 2);
-  --switch-bg-url: url(./assets/Logo/sun.svg);
+  --switch-bg-url: url(/assets/Logo/sun.svg);
 }
 
 #filtros {
